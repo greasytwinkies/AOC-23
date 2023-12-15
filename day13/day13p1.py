@@ -1,5 +1,5 @@
 # read in input
-with open('input.txt', 'r') as f:
+with open('exampleinput2.txt', 'r') as f:
     file = f.read()
 
 patterns = file.split('\n\n')
