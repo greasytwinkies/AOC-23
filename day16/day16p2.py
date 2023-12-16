@@ -113,7 +113,7 @@ for n in range(len(grid[0])): # first row
 for n in range(len(grid)): # first column
     local_max = check_max(grid, n, 0, "R")
     max_energy = local_max if local_max > max_energy else max_energy
-    local_max = check_max(grid, n, len(grid[0])-1, "U")
+    local_max = check_max(grid, n, len(grid[0])-1, "L")
     max_energy = local_max if local_max > max_energy else max_energy
 
 print(f"Number of energized tiles in most optimal configuration: {max_energy}")
